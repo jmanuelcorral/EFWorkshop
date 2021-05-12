@@ -30,7 +30,10 @@ We have this three entities:
 ```
 
 And we need to persist them in a database with the current model:
-[![alt](../../docs/firstschema.png)]
+
+
+![database schema](../../docs/firstschema.png)
+
 
 What we build: 
  - A valid DbContext with the three Entities that we have.
