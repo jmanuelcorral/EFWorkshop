@@ -19,3 +19,4 @@ All the exercises have two folders, one named ```start``` with the solution with
 
 - [Basic Scaffolding](/exercises/EntitiesScaffolding/Exercise.md)
 - [DbMappings](/exercises/DbMappings/Exercise.md)
+- [Relationships](/exercises/RelationShips/Exercise.md)
