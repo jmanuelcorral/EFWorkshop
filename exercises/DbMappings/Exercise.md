@@ -51,7 +51,8 @@ And we need to persist them in a database with the current model:
 
 What we need to build: 
 
- - We need to "Ignore" the IsSenior Properties listed in Professor and Student class on the generation of the schema. Also we have a database restriction on Entities Names, the column in database must be 250 Characters Max Lenght and has the name "Name".
+ - We need to "Ignore" the IsSenior Properties listed in Professor and Student class on the generation of the schema. 
+ - We have a database restriction on Entities Names, the column in database must be 250 Characters Max Lenght and has the name "Name".
 
 ## On Finished Exercise
 
@@ -68,5 +69,4 @@ select c.Name as CName, p.Name as PName, s.Name as SName
 
 ## References
 
-- [DbContext Configuration Basics](https://docs.microsoft.com/es-es/ef/core/dbcontext-configuration/)
-- [Bogus Faker](https://github.com/bchavez/Bogus)
+- [DbContext Modeling Fluent API](https://docs.microsoft.com/es-es/ef/core/modeling/)
