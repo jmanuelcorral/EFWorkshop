@@ -21,3 +21,4 @@ All the exercises have two folders, one named ```start``` with the solution with
 - [DbMappings](/exercises/DbMappings/Exercise.md)
 - [Relationships](/exercises/RelationShips/Exercise.md)
 - [Working with aspnet core](/exercises/WorkingOnAspNetCore/Exercise.md)
+- [Extending aspnet core](/exercises/PatternsAndPractices/Exercise.md)
