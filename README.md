@@ -1,6 +1,6 @@
 # EFWorkshop
 
-Wellcome to Entity Framework Core Workshop. 
+Welcome to Entity Framework Core Workshop. 
 
 ## Requirements 
 
