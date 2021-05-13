@@ -4,7 +4,7 @@ using System.Text;
 
 namespace HomeSchool.Data.Repositories
 {
-    public interface ICourseRepository: IRepositoryBase<Course, int>
+    public interface ICourseRepository : IRepositoryBase<Course, int>
     {
     }
 
@@ -12,22 +12,38 @@ namespace HomeSchool.Data.Repositories
     {
     }
 
-    public interface IProfessorRepository
+    public interface IProfessorReadOnlyRepository : IReadOnlyRepository<Professor, int>
     {
 
     }
 
-    public interface IStudentRepository
+    public interface IStudentReadOnlyRepository : IReadOnlyRepository<Student, int>
     {
 
     }
 
-    public class ProfessorRepository:IProfessorRepository
-    { //CODE HERE
+    public interface IProfessorRepository : IRepositoryBase<Professor, int>
+    {
+
     }
 
-    public class StudentRepository : IStudentRepository
-    { //CODE HERE
+    public interface IStudentRepository : IRepositoryBase<Student, int>
+    {
+
+    }
+
+    public class ProfessorRepository: RepositoryBase<Professor, int>, IProfessorRepository
+    {
+        public ProfessorRepository(SchoolDbContext context) : base(context)
+        {
+        }
+    }
+
+    public class StudentRepository : RepositoryBase<Student, int>, IStudentRepository
+    {
+        public StudentRepository(SchoolDbContext context) : base(context)
+        {
+        }
     }
 
     public class CourseRepository : RepositoryBase<Course, int>, ICourseRepository
@@ -40,6 +56,20 @@ namespace HomeSchool.Data.Repositories
     public class CourseReadOnlyRepository : ReadOnlyRepositoryBase<Course, int>, ICourseReadOnlyRepository
     {
         public CourseReadOnlyRepository(SchoolDbContext context) : base(context)
+        {
+        }
+    }
+
+    public class ProfessorReadOnlyRepository : ReadOnlyRepositoryBase<Professor, int>, IProfessorReadOnlyRepository
+    {
+        public ProfessorReadOnlyRepository(SchoolDbContext context) : base(context)
+        {
+        }
+    }
+
+    public class StudentReadOnlyRepository : ReadOnlyRepositoryBase<Student, int>, IStudentReadOnlyRepository
+    {
+        public StudentReadOnlyRepository(SchoolDbContext context) : base(context)
         {
         }
     }

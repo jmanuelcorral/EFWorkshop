@@ -27,6 +27,8 @@ namespace HomeSchool.Data
             services.AddScoped<ISchoolUnitOfWork, SchoolUnitOfWork>();
             services.AddScoped<ICourseRepository, CourseRepository>();
             services.AddScoped<ICourseReadOnlyRepository, CourseReadOnlyRepository>();
+            services.AddScoped<IProfessorReadOnlyRepository, ProfessorReadOnlyRepository>();
+            services.AddScoped<IStudentReadOnlyRepository, StudentReadOnlyRepository>();
             services.AddScoped<IStudentRepository, StudentRepository>();
             services.AddScoped<IProfessorRepository, ProfessorRepository>();
             return services;
